@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercícios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calcule seus ganhos</h1>
+    </header>
+    <section>
+        <div>
+            salário base (bruto) <br><input type="number" name="sal" id="sal">
+        </div>
+
+        <div>
+            Jornada mensal(horas)<br>
+            <input class="campos" type="number" name="ho" id="ho">
+        </div>
+
+        <div>
+            Horas extras (100%) <br>
+            <input class="campos" type="text" name="vp" id="vp" onblur="addPercentSymbol()">
+        </div>
+
+        <div>
+            Horas extras trabalhadas<br>
+            <input class="campos" type="number" name="het" id="het">
+        </div>
+
+        <div>
+            Valor hora recebido!<br>
+            <input class="campos" type="text" name="vh" id="vh" readonly>
+        </div>
+        
+        <div>
+            Valor HE faturadas!<br>
+            <div>
+                <input class="campos" type="text" name="hef" id="hef" readonly>
+                <span id="hef_resultado"></span>
+            </div>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input type="button" value="Limpar" onclick="limpar()">
+    </section>
+    <footer>
+        <p>&copy;Pachecoedu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
