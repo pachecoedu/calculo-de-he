@@ -14,7 +14,7 @@ function calcular() {
         alert("Por favor, preencha todas as informações antes de calcular.");
         return;
     }
-    document.getElementById('hef_resultado').textContent = ` ${hefaturada.toFixed(2)} horas`;
+    document.getElementById('hef_resultado').textContent = ` ${hefaturada.toFixed(2)}R$`;
 
     document.getElementById('vh').value = valorhora.toFixed(2);
     document.getElementById('hef').value = hefaturada.toFixed(2);
