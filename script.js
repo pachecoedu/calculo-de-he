@@ -38,5 +38,3 @@ function limpar() {
     document.getElementById('hef').value = "";
     document.getElementById('hef_resultado').textContent = "";
 }
-
-}

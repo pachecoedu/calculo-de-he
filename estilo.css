@@ -39,7 +39,6 @@ body {
   }
   
   input[type="button"] {
-   
     border-radius: 5px;
     border: none;
     color: #FFF;
@@ -54,7 +53,7 @@ body {
   strong {
     font-size: medium;
   }
-
+  
   footer {
     background-color: #333;
     color: #FFF;
