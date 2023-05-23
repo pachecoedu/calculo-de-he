@@ -14,38 +14,33 @@
         <h1>Calcule seus ganhos</h1>
     </header>
     <section>
-        <div>
-            salário base (bruto) <br><input type="number" name="sal" id="sal">
-        </div>
-
-        <div>
-            Jornada mensal (horas)<br>
-            <input class="campos" type="number" name="ho" id="ho">
-        </div>
-
-        <div>
-            Horas extras (100%) <br>
-            <input class="campos" type="text" name="vp" id="vp" onblur="addPercentSymbol()">
-        </div>
-
-        <div>
-            Horas extras trabalhadas<br>
-            <input class="campos" type="number" name="het" id="het">
-        </div>
-
-        <div>
-            Valor hora recebido<br>
-            <input class="campos" type="text" name="vh" id="vh" readonly>
-        </div>
-        
-        <div>
-            Valor das Horas Extras faturadas<br>
+        <div class="container-pai">
             <div>
-                <input class="campos" type="text" name="hef" id="hef" readonly>
-                <span id="hef_resultado"></span>
+                salário base (bruto) <br><input type="number" name="sal" id="sal">
             </div>
-            <input type="button" value="Calcular" onclick="calcular()">
-            <input type="button" value="Limpar" onclick="limpar()">
+
+            <div>
+                <span>Jornada mensal (horas no mês)</span>
+                <input class="campos" type="number" name="ho" id="ho">
+            </div>
+
+            <div>
+               <span>Valor pago por hora extra (100%) </span>
+                <input class="campos" type="text" name="vp" id="vp" onblur="addPercentSymbol()">
+            </div>
+
+            <div>
+                <span>Horas extras trabalhadas</span>
+                <input class="campos" type="number" name="het" id="het">
+            </div>
+
+            <div class="resultados" id="resultados"></div>
+
+            <div>
+                <input type="button" value="Calcular" onclick="calcular()">
+                <input type="button" value="Limpar" onclick="limpar()">
+            </div>
+        </div>
     </section>
     <footer>
         <p>&copy;Pachecoedu</p>
