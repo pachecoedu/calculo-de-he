@@ -14,6 +14,11 @@ function calcular() {
         alert("Por favor, preencha todas as informações antes de calcular.");
         return;
     }
+    var respostaHTML = `Este é o valor da sua hora comum: ${valorhora.toFixed(2)} reais. <p>`;
+    respostaHTML += `Deverá receber: ${hefaturada.toFixed(2)} reais pelas horas extras trabalhadas.`;
+
+    var divResultados = document.getElementsByClassName('resultados')[0];
+    divResultados.innerHTML = respostaHTML;
 
     document.getElementById('vh').value = valorhora.toFixed(2);
     document.getElementById('hef').value = hefaturada.toFixed(2);
@@ -32,4 +37,6 @@ function limpar() {
     document.getElementById('vh').value = "";
     document.getElementById('hef').value = "";
     document.getElementById('hef_resultado').textContent = "";
+}
+
 }
